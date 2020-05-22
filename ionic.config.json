@@ -1,5 +1,8 @@
 {
   "name": "video",
-  "integrations": {},
-  "type": "angular"
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "b22b46ad"
 }
