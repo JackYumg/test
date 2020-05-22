@@ -1,0 +1,9 @@
+<ion-slides [pager]="pageShow" [options]="slideOpts" [tabIndex]="slideOpts.initialSlide">
+  <ion-slide *ngFor="let options of images;let i = index;">
+    <div class="side" [ngStyle]="options.style">
+      <ion-button *ngIf="i === (images.length - 1)" (click)="enter()">
+        马上进入
+      </ion-button>
+    </div>
+  </ion-slide>
+</ion-slides>

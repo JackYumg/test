@@ -2,8 +2,11 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '' , redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
+  { path: 'passport' , loadChildren: () => import('./passport/passport.module').then( m => m.PassportModule)},
+  { path: 'note' , loadChildren: () => import('./note/note.module').then( m => m.NoteModule)},
+  { path: 'userInfo' , loadChildren: () => import('./user-info/user-info.module').then( m => m.UserInfoModule)},
 ];
 
 @NgModule({
